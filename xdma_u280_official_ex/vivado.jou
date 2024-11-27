@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Oct 11 22:55:05 2024
+# Process ID: 48704
+# Current directory: e:/vivado_ex/xdma_u280_official_ex
+# Command line: vivado.exe -notrace -source e:/vivado_ex/xdma_u280_ex_ex/.Xil/xdma_u280_official/xdma_u280_official_ex.tcl
+# Log file: e:/vivado_ex/xdma_u280_official_ex/vivado.log
+# Journal file: e:/vivado_ex/xdma_u280_official_ex\vivado.jou
+# Running On: DESKTOP-DVFFB09, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 10, Host memory: 34130 MB
+#-----------------------------------------------------------
+start_gui
+source e:/vivado_ex/xdma_u280_ex_ex/.Xil/xdma_u280_official/xdma_u280_official_ex.tcl -notrace
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1

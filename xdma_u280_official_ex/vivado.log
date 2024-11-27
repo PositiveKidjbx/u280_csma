@@ -1,0 +1,154 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Oct 11 22:55:05 2024
+# Process ID: 48704
+# Current directory: e:/vivado_ex/xdma_u280_official_ex
+# Command line: vivado.exe -notrace -source e:/vivado_ex/xdma_u280_ex_ex/.Xil/xdma_u280_official/xdma_u280_official_ex.tcl
+# Log file: e:/vivado_ex/xdma_u280_official_ex/vivado.log
+# Journal file: e:/vivado_ex/xdma_u280_official_ex\vivado.jou
+# Running On: DESKTOP-DVFFB09, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 10, Host memory: 34130 MB
+#-----------------------------------------------------------
+start_gui
+source e:/vivado_ex/xdma_u280_ex_ex/.Xil/xdma_u280_official/xdma_u280_official_ex.tcl -notrace
+INFO: [open_example_project] Creating new example project...
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128_es:part0:1.0 available at E:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/1.0/board.xml as part xcvu37p-fsvh2892-2l-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at E:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at E:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at E:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at E:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at E:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at E:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at E:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at E:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at E:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at E:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at E:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at E:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at E:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2023.1/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2970.676 ; gain = 402.773
+INFO: [open_example_project] Importing original IP ...
+INFO: [open_example_project] Generating the example project IP ...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'xdma_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'xdma_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'xdma_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'xdma_0'...
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e-es1
+generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 4485.598 ; gain = 1458.926
+INFO: [open_example_project] Adding example synthesis HDL files ...
+INFO: [open_example_project] Adding example XDC files ...
+INFO: [open_example_project] Adding simulation HDL files ...
+INFO: [open_example_project] Adding simulation miscellaneous files ...
+INFO: [open_example_project] Sourcing example extension scripts ...
+INFO: [open_example_project] Sourcing extension script: gen_ex_cores.tcl
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'xdma_0'...
+INFO: [open_example_project] Sourcing extension script: clk_wiz.tcl
+create_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 4785.344 ; gain = 299.746
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+INFO: [open_example_project] Rebuilding top IP...
+INFO: [exportsim-Tcl-40] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/Xilinx/Vivado/2023.1/data/xsim'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.ip_user_files/sim_scripts/xdma_u280_official/xsim/xdma_u280_official.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Siemens ModelSim Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.cache/compile_simlib/modelsim'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.ip_user_files/sim_scripts/xdma_u280_official/modelsim/xdma_u280_official.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "QUESTA" (Siemens Questa Advanced Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.cache/compile_simlib/questa'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.ip_user_files/sim_scripts/xdma_u280_official/questa/xdma_u280_official.sh'
+INFO: [exportsim-Tcl-5] Generating 3-step script for 'xcelium'. To create a single-step script, use the -single_step switch.
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.cache/compile_simlib/xcelium'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.ip_user_files/sim_scripts/xdma_u280_official/xcelium/xdma_u280_official.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "VCS" (Synopsys Verilog Compiler Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.cache/compile_simlib/vcs'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.ip_user_files/sim_scripts/xdma_u280_official/vcs/xdma_u280_official.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "RIVIERA" (Aldec Riviera-PRO Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.cache/compile_simlib/riviera'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.ip_user_files/sim_scripts/xdma_u280_official/riviera/xdma_u280_official.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "ACTIVEHDL" (Aldec Active-HDL Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.cache/compile_simlib/activehdl'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.ip_user_files/sim_scripts/xdma_u280_official/activehdl/xdma_u280_official.sh'
+INFO: [exportsim-Tcl-40] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-72] Using boost library from 'E:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/Xilinx/Vivado/2023.1/data/xsim'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.ip_user_files/sim_scripts/clk_wiz_0/xsim/clk_wiz_0.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Siemens ModelSim Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.cache/compile_simlib/modelsim'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.ip_user_files/sim_scripts/clk_wiz_0/modelsim/clk_wiz_0.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "QUESTA" (Siemens Questa Advanced Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.cache/compile_simlib/questa'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.ip_user_files/sim_scripts/clk_wiz_0/questa/clk_wiz_0.sh'
+INFO: [exportsim-Tcl-5] Generating 3-step script for 'xcelium'. To create a single-step script, use the -single_step switch.
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.cache/compile_simlib/xcelium'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.ip_user_files/sim_scripts/clk_wiz_0/xcelium/clk_wiz_0.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "VCS" (Synopsys Verilog Compiler Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.cache/compile_simlib/vcs'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.ip_user_files/sim_scripts/clk_wiz_0/vcs/clk_wiz_0.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "RIVIERA" (Aldec Riviera-PRO Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.cache/compile_simlib/riviera'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.ip_user_files/sim_scripts/clk_wiz_0/riviera/clk_wiz_0.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "ACTIVEHDL" (Aldec Active-HDL Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.cache/compile_simlib/activehdl'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.ip_user_files/sim_scripts/clk_wiz_0/activehdl/clk_wiz_0.sh'
+export_ip_user_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 4838.824 ; gain = 48.141
+INFO: [open_example_project] Open Example Project completed
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: xdma_u280_official
+[Fri Oct 11 22:57:59 2024] Launched xdma_u280_official_synth_1, synth_1...
+Run output will be captured here:
+xdma_u280_official_synth_1: e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.runs/xdma_u280_official_synth_1/runme.log
+synth_1: e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.runs/synth_1/runme.log
+[Fri Oct 11 22:57:59 2024] Launched impl_1...
+Run output will be captured here: e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 5096.750 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1366 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 7462.277 ; gain = 30.957
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 7462.277 ; gain = 30.957
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 7462.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 308 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 31 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 9 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 9 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 230 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 12 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 16 instances
+
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:01:01 . Memory (MB): peak = 8029.406 ; gain = 3125.605
+open_report: Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 8510.715 ; gain = 400.488
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+[Sat Oct 12 16:05:32 2024] Launched impl_1...
+Run output will be captured here: e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 12 16:09:15 2024...

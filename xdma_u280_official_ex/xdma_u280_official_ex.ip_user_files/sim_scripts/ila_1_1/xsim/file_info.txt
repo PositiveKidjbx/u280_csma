@@ -1,0 +1,2 @@
+ila_1.v,verilog,xil_defaultlib,../../../../xdma_u280_official_ex.gen/sources_1/ip/ila_1_1/sim/ila_1.v,incdir="../../../../xdma_u280_official_ex.gen/sources_1/ip/ila_1_1/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

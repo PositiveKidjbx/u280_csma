@@ -1,0 +1,735 @@
+
+*** Running vivado
+    with args -log xilinx_dma_pcie_ep.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source xilinx_dma_pcie_ep.tcl
+
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xilinx_dma_pcie_ep.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1923.664 ; gain = 176.215
+Command: read_checkpoint -auto_incremental -incremental e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/utils_1/imports/synth_1/xilinx_dma_pcie_ep.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/utils_1/imports/synth_1/xilinx_dma_pcie_ep.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top xilinx_dma_pcie_ep -part xcu280-fsvh2892-2L-e-es1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'xdma_u280_official' is locked:
+* IP 'xdma_u280_official' was locked because its BD Cell is locked for upgrade.
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu280-es1'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu280-es1'
+INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e-es1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24760
+INFO: [Synth 8-11241] undeclared symbol 'sys_resetn', assumed default net type 'wire' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:139]
+INFO: [Synth 8-11241] undeclared symbol 'dst_addr', assumed default net type 'wire' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:401]
+INFO: [Synth 8-11241] undeclared symbol 'rssi_thresh', assumed default net type 'wire' [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/xpu_v1_0.v:154]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3863.344 ; gain = 402.598
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'xilinx_dma_pcie_ep' [e:/vivado_ex/xdma_u280_official_ex/imports/xilinx_dma_pcie_ep.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE4' [E:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:71960]
+	Parameter REFCLK_HROW_CK_SEL bound to: 2'b00 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE4' (0#1) [E:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:71960]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [E:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:71768]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [E:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:71768]
+INFO: [Synth 8-6157] synthesizing module 'xdma_u280_official' [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.runs/synth_1/.Xil/Vivado-23172-DESKTOP-DVFFB09/realtime/xdma_u280_official_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xdma_u280_official' (0#1) [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.runs/synth_1/.Xil/Vivado-23172-DESKTOP-DVFFB09/realtime/xdma_u280_official_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'xdma_app' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:2]
+	Parameter C_M_AXI_ID_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'delay_T' [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/new/delay_T.v:1]
+	Parameter DATA_WIDTH bound to: 514 - type: integer 
+	Parameter DELAY bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'delay_T' (0#1) [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/new/delay_T.v:1]
+INFO: [Synth 8-6157] synthesizing module 'info_parser' [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/new/info_parser.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'info_parser' (0#1) [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/new/info_parser.v:1]
+WARNING: [Synth 8-7071] port 's_axis_cmac_rx_tuser_err' of module 'info_parser' is unconnected for instance 'txpu_parser_inst' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:286]
+WARNING: [Synth 8-7023] instance 'txpu_parser_inst' of module 'info_parser' has 12 connections declared, but only 11 given [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:286]
+INFO: [Synth 8-6157] synthesizing module 'xpu_v1_0' [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/xpu_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'csma_ca' [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/csma_ca.v:5]
+INFO: [Synth 8-6157] synthesizing module 'n_sym_len14_pkt' [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/n_sym_len14_pkt.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'n_sym_len14_pkt' (0#1) [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/n_sym_len14_pkt.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/csma_ca.v:292]
+INFO: [Synth 8-6155] done synthesizing module 'csma_ca' (0#1) [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/csma_ca.v:5]
+INFO: [Synth 8-6157] synthesizing module 'cw_exp' [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/cw_exp.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cw_exp' (0#1) [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/cw_exp.v:6]
+INFO: [Synth 8-6157] synthesizing module 'tx_control' [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/tx_control.v:9]
+	Parameter RSSI_HALF_DB_WIDTH bound to: 11 - type: integer 
+	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter WIFI_TX_BRAM_ADDR_WIDTH bound to: 10 - type: integer 
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/tx_control.v:376]
+INFO: [Synth 8-6157] synthesizing module 'ila_1' [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.runs/synth_1/.Xil/Vivado-23172-DESKTOP-DVFFB09/realtime/ila_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_1' (0#1) [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.runs/synth_1/.Xil/Vivado-23172-DESKTOP-DVFFB09/realtime/ila_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'tx_control' (0#1) [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/tx_control.v:9]
+INFO: [Synth 8-6157] synthesizing module 'tsf_timer' [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/tsf_timer.v:5]
+	Parameter TIMER_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tsf_timer' (0#1) [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/tsf_timer.v:5]
+INFO: [Synth 8-6157] synthesizing module 'phy_rx_parse' [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/src/phy_rx_parse.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'phy_rx_parse' (0#1) [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/src/phy_rx_parse.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'xpu_v1_0' (0#1) [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/xpu_v1_0.v:4]
+WARNING: [Synth 8-7071] port 'byte_in_strobe' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_tx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:301]
+WARNING: [Synth 8-7071] port 'byte_in' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_tx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:301]
+WARNING: [Synth 8-7071] port 'byte_count' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_tx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:301]
+WARNING: [Synth 8-7071] port 'tx_done_intr' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_tx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:301]
+WARNING: [Synth 8-7071] port 'rx_bb_is_ongoing' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_tx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:301]
+WARNING: [Synth 8-7071] port 'rx_done' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_tx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:301]
+WARNING: [Synth 8-7071] port 'tx_done' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_tx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:301]
+WARNING: [Synth 8-7071] port 'crc_ok' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_tx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:301]
+WARNING: [Synth 8-7071] port 'DATA_flag' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_tx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:301]
+WARNING: [Synth 8-7071] port 'rx_rstn' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_tx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:301]
+WARNING: [Synth 8-7071] port 'tx_rstn' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_tx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:301]
+WARNING: [Synth 8-7071] port 'sample_freq' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_tx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:301]
+WARNING: [Synth 8-7023] instance 'inst_xpu_tx' of module 'xpu_v1_0' has 40 connections declared, but only 28 given [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:301]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.runs/synth_1/.Xil/Vivado-23172-DESKTOP-DVFFB09/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (0#1) [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.runs/synth_1/.Xil/Vivado-23172-DESKTOP-DVFFB09/realtime/fifo_generator_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axis_cmac_rx_tuser_err' of module 'info_parser' is unconnected for instance 'rxpu_parser_inst' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:357]
+WARNING: [Synth 8-7023] instance 'rxpu_parser_inst' of module 'info_parser' has 12 connections declared, but only 11 given [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:357]
+WARNING: [Synth 8-689] width (1) of port connection 'dst_addr' does not match port width (48) of module 'xpu_v1_0' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:401]
+WARNING: [Synth 8-7071] port 'byte_in_strobe' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_rx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:372]
+WARNING: [Synth 8-7071] port 'byte_in' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_rx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:372]
+WARNING: [Synth 8-7071] port 'byte_count' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_rx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:372]
+WARNING: [Synth 8-7071] port 'tx_done_intr' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_rx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:372]
+WARNING: [Synth 8-7071] port 'rx_bb_is_ongoing' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_rx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:372]
+WARNING: [Synth 8-7071] port 'rx_done' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_rx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:372]
+WARNING: [Synth 8-7071] port 'tx_done' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_rx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:372]
+WARNING: [Synth 8-7071] port 'crc_ok' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_rx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:372]
+WARNING: [Synth 8-7071] port 'DATA_flag' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_rx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:372]
+WARNING: [Synth 8-7071] port 'rx_rstn' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_rx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:372]
+WARNING: [Synth 8-7071] port 'tx_rstn' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_rx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:372]
+WARNING: [Synth 8-7071] port 'sample_freq' of module 'xpu_v1_0' is unconnected for instance 'inst_xpu_rx' [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:372]
+WARNING: [Synth 8-7023] instance 'inst_xpu_rx' of module 'xpu_v1_0' has 40 connections declared, but only 28 given [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:372]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:405]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.runs/synth_1/.Xil/Vivado-23172-DESKTOP-DVFFB09/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.runs/synth_1/.Xil/Vivado-23172-DESKTOP-DVFFB09/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xdma_app' (0#1) [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:2]
+WARNING: [Synth 8-7071] port 'user_lnk_up' of module 'xdma_app' is unconnected for instance 'xdma_app_i' [e:/vivado_ex/xdma_u280_official_ex/imports/xilinx_dma_pcie_ep.sv:291]
+WARNING: [Synth 8-7023] instance 'xdma_app_i' of module 'xdma_app' has 15 connections declared, but only 14 given [e:/vivado_ex/xdma_u280_official_ex/imports/xilinx_dma_pcie_ep.sv:291]
+INFO: [Synth 8-6155] done synthesizing module 'xilinx_dma_pcie_ep' (0#1) [e:/vivado_ex/xdma_u280_official_ex/imports/xilinx_dma_pcie_ep.sv:57]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'csma_ca_inst'. This will prevent further optimization [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/xpu_v1_0.v:164]
+WARNING: [Synth 8-6014] Unused sequential element nav_state_old_reg was removed.  [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/csma_ca.v:147]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'tx_control_i'. This will prevent further optimization [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/xpu_v1_0.v:224]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'tx_control_ila_inst'. This will prevent further optimization [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/tx_control.v:376]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'phy_rx_parse_i'. This will prevent further optimization [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/imports/njuphy_xpu/hdl/xpu_v1_0.v:266]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rxpu_parser_inst'. This will prevent further optimization [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:357]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0_inst'. This will prevent further optimization [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:405]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_xpu_rx'. This will prevent further optimization [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:372]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'txpu_parser_inst'. This will prevent further optimization [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:286]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_xpu_tx'. This will prevent further optimization [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:301]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'fifo_generator_0_inst'. This will prevent further optimization [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:334]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rxpu_delay_inst'. This will prevent further optimization [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:349]
+WARNING: [Synth 8-6014] Unused sequential element ctl_start_reg was removed.  [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:234]
+WARNING: [Synth 8-6014] Unused sequential element FC_type_new_reg was removed.  [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:235]
+WARNING: [Synth 8-6014] Unused sequential element FC_subtype_new_reg was removed.  [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:236]
+WARNING: [Synth 8-6014] Unused sequential element rts_done_reg was removed.  [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:231]
+WARNING: [Synth 8-3848] Net leds in module/entity xdma_app does not have driver. [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:42]
+WARNING: [Synth 8-3848] Net cts_tx_flag in module/entity xdma_app does not have driver. [e:/vivado_ex/xdma_u280_official_ex/imports/xdma_app.v:77]
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[511] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[510] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[509] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[508] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[507] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[506] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[505] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[504] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[503] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[502] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[501] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[500] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[499] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[498] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[497] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[496] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[495] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[494] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[493] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[492] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[491] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[490] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[489] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[488] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[487] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[486] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[485] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[484] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[483] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[482] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[481] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[480] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[479] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[478] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[477] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[476] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[475] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[474] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[473] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[472] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[471] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[470] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[469] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[468] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[467] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[466] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[465] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[464] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[463] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[462] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[461] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[460] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[459] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[458] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[457] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[456] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[455] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[454] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[453] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[452] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[451] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[450] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[449] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[448] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[447] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[446] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[445] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[444] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[443] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[442] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[441] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[440] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[199] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[198] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[197] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[196] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[195] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[194] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[193] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[192] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[191] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[190] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[189] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[188] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[187] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[186] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[185] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[184] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[183] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[182] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[181] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[180] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[179] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[178] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[177] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[176] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[175] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[174] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[173] in module phy_rx_parse is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ofdm_byte_512b[172] in module phy_rx_parse is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3984.547 ; gain = 523.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 4002.461 ; gain = 541.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 4002.461 ; gain = 541.715
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.144 . Memory (MB): peak = 4014.496 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc] for cell 'xdma_u280_official_i'
+Finished Parsing XDC File [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc] for cell 'xdma_u280_official_i'
+Parsing XDC File [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'xdma_app_i/fifo_generator_0_inst'
+Finished Parsing XDC File [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.gen/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'xdma_app_i/fifo_generator_0_inst'
+Parsing XDC File [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.gen/sources_1/ip/ila_1_4/ila_1/ila_1_in_context.xdc] for cell 'xdma_app_i/inst_xpu_tx/tx_control_i/tx_control_ila_inst'
+Finished Parsing XDC File [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.gen/sources_1/ip/ila_1_4/ila_1/ila_1_in_context.xdc] for cell 'xdma_app_i/inst_xpu_tx/tx_control_i/tx_control_ila_inst'
+Parsing XDC File [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.gen/sources_1/ip/ila_1_4/ila_1/ila_1_in_context.xdc] for cell 'xdma_app_i/inst_xpu_rx/tx_control_i/tx_control_ila_inst'
+Finished Parsing XDC File [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.gen/sources_1/ip/ila_1_4/ila_1/ila_1_in_context.xdc] for cell 'xdma_app_i/inst_xpu_rx/tx_control_i/tx_control_ila_inst'
+Parsing XDC File [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'xdma_app_i/ila_0_inst'
+Finished Parsing XDC File [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'xdma_app_i/ila_0_inst'
+Parsing XDC File [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/constrs_1/imports/imports/xilinx_pcie_xdma_ref_board.xdc]
+WARNING: [Vivado 12-584] No ports matched 'free_run_clock_p_in'. [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/constrs_1/imports/imports/xilinx_pcie_xdma_ref_board.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'free_run_clock_n_in'. [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/constrs_1/imports/imports/xilinx_pcie_xdma_ref_board.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'free_run_clock_p_in'. [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/constrs_1/imports/imports/xilinx_pcie_xdma_ref_board.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'free_run_clock_n_in'. [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/constrs_1/imports/imports/xilinx_pcie_xdma_ref_board.xdc:80]
+INFO: [Vivado 12-1808] Property 'LOC' is not supported for elaborated designs for objects of type 'port'. [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/constrs_1/imports/imports/xilinx_pcie_xdma_ref_board.xdc:97]
+INFO: [Vivado 12-1808] Property 'LOC' is not supported for elaborated designs for objects of type 'port'. [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/constrs_1/imports/imports/xilinx_pcie_xdma_ref_board.xdc:98]
+WARNING: [Vivado 12-508] No pins matched '*sync_reg[0]/D'. [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/constrs_1/imports/imports/xilinx_pcie_xdma_ref_board.xdc:113]
+Finished Parsing XDC File [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/constrs_1/imports/imports/xilinx_pcie_xdma_ref_board.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/constrs_1/imports/imports/xilinx_pcie_xdma_ref_board.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/xilinx_dma_pcie_ep_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/constrs_1/imports/imports/xilinx_pcie_xdma_ref_board.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/xilinx_dma_pcie_ep_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/xilinx_dma_pcie_ep_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 4143.703 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 4143.703 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'xdma_app_i/fifo_generator_0_inst' at clock pin 's_aclk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'xdma_app_i/ila_0_inst' at clock pin 'clk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'xdma_app_i/inst_xpu_rx/tx_control_i/tx_control_ila_inst' at clock pin 'clk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'xdma_app_i/inst_xpu_tx/tx_control_i/tx_control_ila_inst' at clock pin 'clk' is different from the actual clock period '4.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 4144.676 ; gain = 683.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu280-fsvh2892-2L-e-es1
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 4144.676 ; gain = 683.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[0]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[0]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[10]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[10]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[11]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[11]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[12]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[12]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[13]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[13]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[14]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[14]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[15]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[15]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[1]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[1]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[2]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[2]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[3]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[3]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[4]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[4]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[5]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[5]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[6]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[6]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[7]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[7]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[8]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[8]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxn[9]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxn[9]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[0]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[0]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[10]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[10]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[11]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[11]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[12]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[12]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[13]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[13]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[14]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[14]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[15]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[15]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[1]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[1]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[2]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[2]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[3]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[3]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[4]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[4]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[5]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[5]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[6]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[6]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[7]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[7]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[8]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[8]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_rxp[9]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_rxp[9]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[0]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[0]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[10]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[10]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[11]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[11]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[12]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[12]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[13]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[13]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[14]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[14]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[15]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[15]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[1]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[1]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[2]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[2]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[3]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[3]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[4]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[4]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[5]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[5]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[6]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[6]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[7]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[7]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[8]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[8]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txn[9]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txn[9]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[0]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 98).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[0]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 99).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[10]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 100).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[10]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 101).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[11]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 102).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[11]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 103).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[12]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 104).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[12]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 105).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[13]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 106).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[13]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 107).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[14]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 108).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[14]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 109).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[15]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 110).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[15]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 111).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[1]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 112).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[1]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 113).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[2]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 114).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[2]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 115).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[3]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 116).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[3]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 117).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[4]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 118).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[4]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 119).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[5]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 120).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[5]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 121).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[6]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 122).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[6]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 123).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[7]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 124).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[7]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 125).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[8]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 126).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[8]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 127).
+Applied set_property IO_BUFFER_TYPE = NONE for pci_exp_txp[9]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 128).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for pci_exp_txp[9]. (constraint file  e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.srcs/sources_1/ip/xdma_u280_official/xdma_u280_official/xdma_u280_official_in_context.xdc, line 129).
+Applied set_property KEEP_HIERARCHY = SOFT for xdma_u280_official_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for xdma_app_i/fifo_generator_0_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for xdma_app_i/inst_xpu_tx/tx_control_i/tx_control_ila_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for xdma_app_i/inst_xpu_rx/tx_control_i/tx_control_ila_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for xdma_app_i/ila_0_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 4144.676 ; gain = 683.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 4144.676 ; gain = 683.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   15 Bit       Adders := 6     
+	   2 Input   13 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 2     
+	   4 Input   11 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 6     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 26    
++---XORs : 
+	                4 Bit    Wide XORs := 2     
++---Registers : 
+	              514 Bit    Registers := 20    
+	              512 Bit    Registers := 3     
+	               48 Bit    Registers := 8     
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 4     
+	               15 Bit    Registers := 14    
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 54    
++---Multipliers : 
+	                5x8  Multipliers := 2     
++---Muxes : 
+	   2 Input  512 Bit        Muxes := 5     
+	   2 Input   48 Bit        Muxes := 30    
+	  16 Input   48 Bit        Muxes := 2     
+	  22 Input   48 Bit        Muxes := 2     
+	  30 Input   48 Bit        Muxes := 2     
+	   4 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 6     
+	   2 Input   16 Bit        Muxes := 12    
+	  24 Input   16 Bit        Muxes := 2     
+	   4 Input   15 Bit        Muxes := 2     
+	   2 Input   15 Bit        Muxes := 6     
+	   8 Input   15 Bit        Muxes := 4     
+	   8 Input   13 Bit        Muxes := 2     
+	   2 Input   13 Bit        Muxes := 10    
+	   2 Input   12 Bit        Muxes := 20    
+	   2 Input    9 Bit        Muxes := 8     
+	   2 Input    8 Bit        Muxes := 8     
+	   2 Input    4 Bit        Muxes := 20    
+	   2 Input    3 Bit        Muxes := 26    
+	   3 Input    3 Bit        Muxes := 6     
+	   5 Input    3 Bit        Muxes := 4     
+	   4 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 13    
+	   3 Input    2 Bit        Muxes := 2     
+	   8 Input    2 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 115   
+	   8 Input    1 Bit        Muxes := 30    
+	   4 Input    1 Bit        Muxes := 14    
+	   6 Input    1 Bit        Muxes := 2     
+	  12 Input    1 Bit        Muxes := 2     
+	  19 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 8     
+	  25 Input    1 Bit        Muxes := 2     
+	  27 Input    1 Bit        Muxes := 2     
+	  33 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 9024 (col length:94)
+BRAMs: 4032 (col length: RAMB18 288 RAMB36 144)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 4144.676 ; gain = 683.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++----------------+----------------------+---------------+----------------+
+|Module Name     | RTL Object           | Depth x Width | Implemented As | 
++----------------+----------------------+---------------+----------------+
+|n_sym_len14_pkt | num_data_ofdm_symbol | 32x3          | LUT            | 
++----------------+----------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 4445.422 ; gain = 984.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 4494.617 ; gain = 1033.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin data_field_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_in_strobe to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_in[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_in[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_in[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_in[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_in[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_in[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_in[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_in[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_count[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_count[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_count[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_count[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_count[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_count[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_count[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_count[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_count[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_count[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_count[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_count[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_count[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_count[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_count[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:byte_count[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:newtask to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_tx:DATA_flag to constant 0
+WARNING: [Synth 8-3295] tying undriven pin data_field_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_in_strobe to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_in[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_in[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_in[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_in[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_in[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_in[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_in[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_in[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_count[15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_count[14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_count[13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_count[12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_count[11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_count[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_count[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_count[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_count[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_count[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_count[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_count[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_count[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_count[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_count[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:byte_count[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:DATA_flag to constant 0
+WARNING: [Synth 8-3295] tying undriven pin inst_xpu_rx:high_trigger to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 4496.785 ; gain = 1036.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 4496.785 ; gain = 1036.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 4496.785 ; gain = 1036.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|delay_T     | ram_reg[9][513] | 10     | 1028  | YES          | NO                 | YES               | 1028   | 0       | 
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|csma_ca     | A*B         | 10     | 5      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|tx_control  | (A*B)'      | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|tx_control  | (C+A*B)'    | 15     | 8      | 13     | -      | 15     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|csma_ca     | A*B         | 10     | 5      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|tx_control  | (A*B)'      | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|tx_control  | (C+A*B)'    | 15     | 8      | 13     | -      | 15     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |ila_1              |         2|
+|2     |fifo_generator_0   |         1|
+|3     |ila_0              |         1|
+|4     |xdma_u280_official |         1|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |fifo_generator     |     1|
+|2     |ila                |     2|
+|4     |ila_1              |     1|
+|5     |xdma_u280_official |     1|
+|6     |CARRY8             |    36|
+|7     |DSP_ALU            |     6|
+|8     |DSP_A_B_DATA       |     6|
+|9     |DSP_C_DATA         |     6|
+|11    |DSP_MULTIPLIER     |     6|
+|12    |DSP_M_DATA         |     6|
+|13    |DSP_OUTPUT         |     6|
+|15    |DSP_PREADD         |     6|
+|16    |DSP_PREADD_DATA    |     6|
+|17    |IBUFDS_GTE4        |     1|
+|18    |LUT1               |    27|
+|19    |LUT2               |  2275|
+|20    |LUT3               |   108|
+|21    |LUT4               |   219|
+|22    |LUT5               |   192|
+|23    |LUT6               |   626|
+|24    |SRL16E             |  1028|
+|25    |FDRE               |  3698|
+|26    |FDSE               |    24|
+|27    |IBUF               |     1|
++------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 4496.785 ; gain = 1036.039
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 57 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 4496.785 ; gain = 893.824
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 4496.785 ; gain = 1036.039
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 4496.785 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 43 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4588.406 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 6 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+
+Synth Design complete | Checksum: 589bf019
+INFO: [Common 17-83] Releasing license: Synthesis
+77 Infos, 209 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:45 . Memory (MB): peak = 4588.406 ; gain = 2579.641
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'e:/vivado_ex/xdma_u280_official_ex/xdma_u280_official_ex.runs/synth_1/xilinx_dma_pcie_ep.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file xilinx_dma_pcie_ep_utilization_synth.rpt -pb xilinx_dma_pcie_ep_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 18 18:33:57 2024...

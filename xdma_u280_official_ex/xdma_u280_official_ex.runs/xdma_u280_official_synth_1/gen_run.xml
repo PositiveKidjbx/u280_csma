@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="xdma_u280_official_synth_1" LaunchPart="xcu280-fsvh2892-2L-e-es1" LaunchTime="1728894658">
+  <File Type="PA-TCL" Name="xdma_u280_official.tcl"/>
+  <File Type="REPORTS-TCL" Name="xdma_u280_official_reports.tcl"/>
+  <File Type="RDS-RDS" Name="xdma_u280_official.vds"/>
+  <File Type="RDS-UTIL" Name="xdma_u280_official_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="xdma_u280_official_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="xdma_u280_official.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/xdma_u280_official" RelGenDir="$PGENDIR/xdma_u280_official">
+    <File Path="$PSRCDIR/sources_1/ip/xdma_u280_official/xdma_u280_official.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xdma_u280_ex_ex/.Xil/xdma_u280_official/xdma_u280_official.xci"/>
+        <Attr Name="ImportTime" Val="1728658492"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="xdma_u280_official"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/xdma_u280_official" RelGenDir="$PGENDIR/xdma_u280_official">
+    <File Path="$PSRCDIR/sources_1/ip/xdma_u280_official/xdma_u280_official.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../xdma_u280_ex_ex/.Xil/xdma_u280_official/xdma_u280_official.xci"/>
+        <Attr Name="ImportTime" Val="1728658492"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="xdma_u280_official"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/xilinx_dma_pcie_ep.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="UsedInSteps" Val="synth_1_copy_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
